@@ -4,7 +4,7 @@
 
 /* #Root Variables */
 :root {
-  --color-brown: #362524;
+  --color-brown: #5c4646;
   --color-brown-variant: #696252;
   --color-white: #FFFFFF;
   --color-white-variant: #F2F1EF;
@@ -47,12 +47,9 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-/* For IE, Edge and Firefox */
 .scrollbar-hide {
   -ms-overflow-style: none;
-  /* IE and Edge */
   scrollbar-width: none;
-  /* Firefox */
 }
 
 a {
@@ -157,9 +154,6 @@ h5 {
   }
 }
 
-.nav .cart {}
-
-
 /* *Landing */
 .landing{
   height: 95vh;
@@ -167,7 +161,7 @@ h5 {
   padding: 5rem var(--padding-4);
 }
 .animate-landing{
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-name: compressLanding;
 }
 @keyframes compressLanding {
@@ -175,12 +169,10 @@ h5 {
     height: 100vh;
     padding: 0;
   }
-
-  50% {
+  80% {
     height: 100vh;
     padding: 0;
   }
-
   100% {
     height: 95vh;
       overflow-y: hidden;
@@ -202,7 +194,7 @@ h5 {
   border-radius: var(--borer-radius-2);
   width: 100%;
   height: 100%;
-  opacity: 80%;
+  opacity: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -216,7 +208,7 @@ h5 {
       border-radius: 0;
     }
   
-    50% {
+    90% {
       border-radius: 0;
     }
   
@@ -254,26 +246,29 @@ h5 {
   font-weight: 400;
 }
 .animate-shop{
-  animation-duration: 2s;
+  animation-duration: 3.5s;
   animation-name: animateShop;
 }
 @keyframes animateShop{
-      5% {
+      0% {
         margin-top: 5rem;
-        width: 2rem;
-          height: 2rem;
-          border-radius: 50%;
-      }
-    
-      50% {
-        margin-top: 0rem;
         width: 2rem;
         height: 2rem;
         border-radius: 50%;
       }
     
-  
-
+      50% {
+        margin-top: 5rem;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+      }
+      70% {
+        margin-top: 0rem;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+      }
       100% {
         height: 2rem;
         width: 6rem;
@@ -287,63 +282,225 @@ h5 {
         transition-duration: 500ms;
       }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* *Animate rocket */
-.animateBox {
-  animation-duration: 10s;
-  animation-name: animate-text;
+.animate-text {
+  animation-duration: 3.5s;
+  animation-name: animateText;
 }
-
-@keyframes animate-text {
+@keyframes animateText {
   0% {
-    transform: scale(1) rotate(10deg);
+    display: none;
+    color: var(--color-white);
   }
 
-  5% {
-    transform: scale(1.25) rotate(-15deg);
+  70% {
+    display: none;
+    color: var(--color-white);
   }
 
-  10% {
-    transform: scale(1.5) rotate(-5deg);
-  }
-
-  15% {
-    transform: scale(1.75) rotate(-10deg);
-  }
-
-  20% {
-    transform: scale(2) rotate(0);
+  88%{
+    display: none;
+    color: var(--color-white);  
   }
 
   100% {
-    transform: scale(20) translate3D(100vw, -100vh, 0) rotate(0);
+    display: block;
+    color: var(--color-dark);
   }
+}
+
+/* *Main */
+.main {
+  padding: 0rem var(--padding-4);
+  padding-top: 4rem;
+  height: 110vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .left{
+  height: 100%;
+  position: relative;
+}
+.main .left .photo-2{
+  position: absolute;
+  bottom: 10%;
+  left: 60%;
+}
+.main .photo-2 img{
+  width: 300px;
+  height: auto;
+  border-radius: var(--borer-radius-1);
+}
+.main .photo-3 img{
+  width: 400px;
+  height: auto;
+  border-radius: var(--borer-radius-1);
+}
+
+.main .middle{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .middle h5{
+  font-weight: 400;
+  text-align: center;
+}
+.main .middle h1{
+  color: var(--color-brown);
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.main .middle h4{
+  font-weight: 500;
+  text-align: center;
+}
+.main .right{
+
+}
+.main .photo-1 img {
+  width: 250px;
+  height: auto;
+  border-radius: var(--borer-radius-1);
+}
+.main .photo-4 img {
+  width: 300px;
+  height: auto;
+  border-radius: var(--borer-radius-1);
+}
+
+/* *Poster */
+.poster {
+  height: 110vh;
+  background: url('./Components/Media/images/poster.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  /* cursor: none; */
+}
+/* .poster .smear {
+  width: 200px;
+  height: 200px;
+  background: red;
+  border-radius: 50%;
+  opacity: 20%;
+} */
+.poster .texts{
+  position: relative;
+  color: var(--color-brown);
+}
+.poster .texts #edgy{
+  position: absolute;
+  top: 10rem;
+  right: 20rem;
+}
+.poster .texts #classy{
+  position: absolute;
+  top: 20rem;
+  left: 30rem;
+}
+.poster .texts #fierce {
+  position: absolute;
+  top: 40rem;
+  left: 20rem;
+}
+.poster .texts #strong {
+  position: absolute;
+  top: 3rem;
+  left: 10rem;
+}
+.poster .texts #chic {
+  position: absolute;
+  top: 25rem;
+  right: 10rem;
+}
+.poster .texts h3{
+  color: var(--color-dark);
+  opacity: 90%;
+  font-size: 1rem;
+  font-weight: 600;
+  display: block;
+  padding: 20px;
+  border-radius: 50%;
+  transition-duration: 800ms;
+}
+.poster .texts h3:hover{
+  color: var(--color-white);
+  font-size: 1.3rem;
+  cursor: none;
+  background: rgba(0,0,0, 0.4);
+  opacity: 0.6;
+}
+
+/* *Maintext */
+.main-text{
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-text .text{
+  width: 40%;
+  color: var(--color-brown);
+}
+
+/* *Cloth styles */
+.cloth-style{
+  padding: 5rem 0;
+  height: 100vh;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.cloth-style .style{
+  height: 100%;
+  width: 100vw;
+
+}
+.cloth-style .style div{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  width: 30rem;
+  margin: 0.3rem;
+  transition-duration: 2000ms;
+}
+.cloth-style .style div:hover{
+  background-size: 150%;
+}
+.cloth-style .chic{
+  height: 100%;
+  background: url('./Components/Media/images/photocard_4.png');
+  background-size: 120%;
+  background-position: center;
+}
+.cloth-style .classy{
+  height: 100%;
+  background: url('./Components/Media/images/photocard_4.png');
+  background-size: 120%;
+  background-position: center;
+}
+.cloth-style .fierce{
+  height: 100%;
+  background: url('./Components/Media/images/photocard_4.png');
+  background-size:120%;
+  background-position: center;
+}
+.cloth-style .strong{
+  height: 100%;
+  background: url('./Components/Media/images/photocard_4.png');
+  background-size: 120%;
+  background-position: center;
+}
+.cloth-style .edgy{
+  height: 100%;
+  background: url('./Components/Media/images/photocard_4.png');
+  background-size: 120%;
+  background-position: center;
 }

@@ -21,7 +21,7 @@ const Landing = () => {
                 <video className={`landing-video ${compressLanding} ? animate-video : ''`} autoPlay muted>
                     <source src={landingVideo} type="video/mp4"></source>
                 </video>
-                <div className="landing-cover" ref={shopRef}>
+                <div className={`landing-cover ${compressLanding} ? animate-video : ''`} ref={shopRef}>
                     <div className="celine">
                         <h1
                             data-aos="fade-right"
@@ -33,13 +33,13 @@ const Landing = () => {
                             É
                         </h1>
                         <h1
-                            data-aos="fade-down"
+                            data-aos="fade-left"
                             data-aos-duration="2000"
                         >
                             L
                         </h1>
                         <h1
-                            data-aos="fade-up"
+                            data-aos="fade-left"
                             data-aos-duration="2000"
                         >
                             I
@@ -57,8 +57,8 @@ const Landing = () => {
                             E
                         </h1>
                     </div>
-                <div className={`circle icon ${shopVisible} ? animate-shop : ''`}><h5 className={`text ${shopVisible} ? animate-text : ''`}>SHOP NOW</h5></div>
-            </div>
+                    <div className={`circle icon ${shopVisible} ? animate-shop : ''`}><h5 className={`text ${shopVisible} ? animate-text : ''`}>SHOP NOW</h5></div>
+                </div>
             </div>
         </div>
     );
