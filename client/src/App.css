@@ -1,0 +1,349 @@
+/* #Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+
+/* #Root Variables */
+:root {
+  --color-brown: #362524;
+  --color-brown-variant: #696252;
+  --color-white: #FFFFFF;
+  --color-white-variant: #F2F1EF;
+  --color-dark: #201F1D;
+  --color-dark-variant: #494A44;
+  --color-green-variant: #6C725A;
+
+  --borer-radius-1: 0.4rem;
+  --borer-radius-2: 0.8rem;
+  --borer-radius-3: 1.2rem;
+
+  --padding-1: 1rem;
+  --padding-2: 1.5rem;
+  --padding-3: 2rem;
+  --padding-4: 3rem;
+
+  --margin-1: 1rem;
+  --margin-2: 1.5rem;
+  --margin-3: 2rem;
+
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  /* appearance: none; */
+  border: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--color-white-variant);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+a {
+  color: var(--color-dark);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 0.6rem;
+}
+
+.text-muted {
+  color: var(--color-dark-variant);
+}
+
+.hide {
+  display: none;
+}
+
+.icon {
+  cursor: pointer;
+  transition: color 500ms;
+}
+
+.icon:hover {
+  color: var(--color-green-variant);
+}
+
+
+/* #Home */
+.home {
+
+}
+
+/* *Navbar */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: var(--padding-2) var(--padding-4);
+}
+
+.nav-box {
+  color: var(--color-brown);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-box .menu {
+  display: flex;
+  align-items: center;
+
+}
+
+.nav-box .brand h1 {
+  color: var(--color-brown);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.nav-box .brand h1:hover {
+  animation-duration: 2s;
+  animation-name: animateBrand;
+}
+
+@keyframes animateBrand {
+  5% {
+    content: CÉLINE;
+  }
+
+  50% {
+    content: CÉL;
+  }
+
+  100% {
+    content: C;
+  }
+}
+
+.nav .cart {}
+
+
+/* *Landing */
+.landing{
+  height: 95vh;
+  overflow-y: hidden;
+  padding: 5rem var(--padding-4);
+}
+.animate-landing{
+  animation-duration: 2s;
+  animation-name: compressLanding;
+}
+@keyframes compressLanding {
+  0% {
+    height: 100vh;
+    padding: 0;
+  }
+
+  50% {
+    height: 100vh;
+    padding: 0;
+  }
+
+  100% {
+    height: 95vh;
+      overflow-y: hidden;
+      padding: 5rem var(--padding-4);
+  }
+}
+.l-video {
+ position: relative;
+}
+.landing-video {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: var(--borer-radius-2);
+}
+.landing-cover{
+  position: absolute;
+  top: 0;
+  background: var(--color-dark);
+  border-radius: var(--borer-radius-2);
+  width: 100%;
+  height: 100%;
+  opacity: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.animate-video{
+  animation-duration: 2s;
+  animation-name: animateVideo;
+}
+@keyframes animateVideo{
+  0% {
+      border-radius: 0;
+    }
+  
+    50% {
+      border-radius: 0;
+    }
+  
+    100% {
+      border-radius: var(--borer-radius-2);
+    }
+}
+.landing-cover .celine{
+  margin-top: 15%;
+  display: flex;
+  gap: 0;
+}
+.landing-cover .celine h1{
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 5rem;
+}
+.landing-cover .circle{
+  height:2rem;
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-1);
+  background: var(--color-white);
+  opacity: 100%;
+  border-radius: var(--borer-radius-3);
+  transition-duration: 500ms;
+}
+.landing-cover .circle:hover{
+  background: var(--color-brown-variant);
+  color: var(--color-white);
+}
+.landing-cover .text h5 {
+  font-weight: 400;
+}
+.animate-shop{
+  animation-duration: 2s;
+  animation-name: animateShop;
+}
+@keyframes animateShop{
+      5% {
+        margin-top: 5rem;
+        width: 2rem;
+          height: 2rem;
+          border-radius: 50%;
+      }
+    
+      50% {
+        margin-top: 0rem;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+      }
+    
+  
+
+      100% {
+        height: 2rem;
+        width: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: var(--padding-1);
+        background: var(--color-white);
+        opacity: 100%;
+        border-radius: var(--borer-radius-3);
+        transition-duration: 500ms;
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *Animate rocket */
+.animateBox {
+  animation-duration: 10s;
+  animation-name: animate-text;
+}
+
+@keyframes animate-text {
+  0% {
+    transform: scale(1) rotate(10deg);
+  }
+
+  5% {
+    transform: scale(1.25) rotate(-15deg);
+  }
+
+  10% {
+    transform: scale(1.5) rotate(-5deg);
+  }
+
+  15% {
+    transform: scale(1.75) rotate(-10deg);
+  }
+
+  20% {
+    transform: scale(2) rotate(0);
+  }
+
+  100% {
+    transform: scale(20) translate3D(100vw, -100vh, 0) rotate(0);
+  }
+}
