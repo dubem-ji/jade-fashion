@@ -4,13 +4,26 @@
 
 /* #Root Variables */
 :root {
-  --color-brown: #5c4646;
-  --color-brown-variant: #696252;
+  /* grey tones */
   --color-white: #FFFFFF;
-  --color-white-variant: #F2F1EF;
-  --color-dark: #201F1D;
-  --color-dark-variant: #494A44;
-  --color-green-variant: #6C725A;
+  --color-grey-1: #E7DCCA;
+  --color-grey-2: #A5A592;
+  --color-grey-3: #6B695C;
+  --color-grey-4: #645552;
+  --color-dark-1: #202322;
+  --color-dark-2: #000000;
+
+  /* bronw tones */
+  --color-brown-1: #A99089;
+  --color-brown-2: #9C5B53;
+  --color-brown-3: #513233;
+  --color-brown-4: #3B3331;
+  --color-brown-5: #29100B;
+
+  /* pink tones */
+  --color-pink-1: #DCC8C1;
+  --color-pink-2: #D3C1AD;
+  --color-pink-3: #D9AEA8;
 
   --borer-radius-1: 0.4rem;
   --borer-radius-2: 0.8rem;
@@ -104,3 +117,75 @@ h5 {
 
 
 /* #Home */
+.home{
+  position: relative;
+  height: 500vh;
+  width: 100vw;
+  background: var(--color-dark-1);
+  color: var(--color-white);
+}
+.home .lines{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 6% 22% 22% 22% 22% 6%;
+}
+.home .lines div{
+  border-right: 1px var(--color-brown-2) solid;
+  opacity: 0.2;
+}
+.home #author{
+  position: fixed;
+  bottom: 20px;
+  left: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  opacity: 0.6;
+  transition-duration: 500ms;
+}
+.home #author:hover{
+  opacity: 1;
+  font-size: 0.61rem;
+}
+.home .menu{
+  position: fixed;
+  top: 49%;
+  left: 10px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition-duration: 500ms;
+}
+.home #menu{
+  color: var(--color-brown-2);
+}
+.home .menu:hover{
+  opacity: 1;
+}
+
+/* *landing */
+.landing {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 7%;
+  padding: 5% 0;
+  border: 1px red solid;
+}
+.landing .top h1{
+  font-weight: 500;
+  font-size: 1.4rem;
+  position: fixed;
+}
+.landing .top span{
+  color: var(--color-brown-2);
+  font-weight: 600;
+}
+
+.landing .slider{
+  position: fixed;
+  bottom: 5%;
+}
