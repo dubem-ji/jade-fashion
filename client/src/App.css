@@ -381,13 +381,13 @@ h5 {
   position: relative;
   /* cursor: none; */
 }
-/* .poster .smear {
+.poster .smear {
   width: 200px;
   height: 200px;
   background: red;
   border-radius: 50%;
   opacity: 20%;
-} */
+}
 .poster .texts{
   position: relative;
   color: var(--color-brown);
@@ -431,7 +431,7 @@ h5 {
   color: var(--color-white);
   font-size: 1.3rem;
   cursor: none;
-  background: rgba(0,0,0, 0.4);
+  /* background: rgba(0,0,0, 0.4); */
   opacity: 0.6;
 }
 
