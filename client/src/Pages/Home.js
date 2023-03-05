@@ -1,7 +1,6 @@
 import React from 'react';
-
 import Landing from '../Components/Home/Landing';
-import MenuIcon from '@mui/icons-material/Menu';
+
 
 
 const Home = () => {
@@ -21,9 +20,21 @@ const Home = () => {
             </div>
             <Landing />
 
-            <h5 id='author'>CREATED BY DJ</h5>
-             <div className="menu">
-                <MenuIcon id='menu' />
+            
+            <h5 id='author'>CONTACT DEVELOPER</h5>
+
+            <div className="menu">
+                <div className="item"><div className="shop">SHOP</div></div>
+                <div className="item"><div className="line">_______</div></div>
+                <div className="item"><div className="contact">CONTACT</div></div>
+            </div>
+     
+
+            <div className="brand">
+                <h1>c<span>é</span>line</h1>
+            </div>
+            <div className="slider">
+                <h5>slider</h5>
             </div>
         </div>
     );
