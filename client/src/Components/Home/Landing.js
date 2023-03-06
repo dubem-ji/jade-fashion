@@ -18,12 +18,23 @@ const Landing = () => {
     const scrollText = useRef(null);
     const triggerScroll = useRef(null);
     const scrollPhone = useRef(null);
+    const movePhotoOne = useRef(null);
+    const movePhotoTwo = useRef(null);
+    const movePhotoThree = useRef(null);
+    const movePhotoFour = useRef(null);
     const movePhotoFive = useRef(null);
+    const movePhotoSix = useRef(null);
+    
 
     useEffect(() => {
         const el = scrollText.current;
         const phone = scrollPhone.current;
+        const photoOne = movePhotoOne.current;
+        const photoTwo = movePhotoTwo.current;
+        const photoThree = movePhotoThree.current;
+        const photoFour = movePhotoFour.current;
         const photoFive = movePhotoFive.current;
+        const photoSix = movePhotoSix.current;
         const triggerEl = triggerScroll.current;
         
         gsap.to(triggerEl, {
@@ -49,21 +60,95 @@ const Landing = () => {
                 end: () => `+=${el.offsetWidth / 4}`,
                 scrub: true,
                 toggleActions: 'restart pause reverse complete',
-                // markers: true,
             }
         },)
 
-        gsap.to(photoFive, {
+        
+        gsap.to(photoOne, {
             top: "20%",
-            right: '40%',
-            width: '330px',
+            right: '39.8%',
+            height: '300px',
+            width: '325px',
             scrollTrigger: {
                 trigger: el,
                 start: "top 20%",
                 end: () => `+=${el.offsetWidth / 4}`,
                 scrub: true,
                 toggleActions: 'restart pause reverse complete',
-                // markers: true,
+            }
+        },)
+
+         
+        gsap.to(photoTwo, {
+            top: "20%",
+            right: '39.8%',
+            height: '300px',
+            width: '325px',
+            scrollTrigger: {
+                trigger: el,
+                start: "top 20%",
+                end: () => `+=${el.offsetWidth / 4}`,
+                scrub: true,
+                toggleActions: 'restart pause reverse complete',
+            }
+        },)
+
+         
+        gsap.to(photoThree, {
+            top: "20%",
+            right: '39.8%',
+            height: '300px',
+            width: '325px',
+            scrollTrigger: {
+                trigger: el,
+                start: "top 20%",
+                end: () => `+=${el.offsetWidth / 4}`,
+                scrub: true,
+                toggleActions: 'restart pause reverse complete',
+            }
+        },)
+
+         
+        gsap.to(photoFour, {
+            top: "20%",
+            right: '39.8%',
+            height: '300px',
+            width: '325px',
+            scrollTrigger: {
+                trigger: el,
+                start: "top 20%",
+                end: () => `+=${el.offsetWidth / 4}`,
+                scrub: true,
+                toggleActions: 'restart pause reverse complete',
+            }
+        },)
+
+        gsap.to(photoFive, {
+                top: "20%",
+                right: '39.8%',
+                height: '300px',
+                width: '325px',
+                scrollTrigger: {
+                    trigger: el,
+                    start: "top 20%",
+                    end: () => `+=${el.offsetWidth / 4}`,
+                    scrub: true,
+                    toggleActions: 'restart pause reverse complete',
+                }
+            },);
+
+         
+        gsap.to(photoSix, {
+            top: "20%",
+            right: '39.8%',
+            height: '300px',
+            width: '325px',
+            scrollTrigger: {
+                trigger: el,
+                start: "top 20%",
+                end: () => `+=${el.offsetWidth / 4}`,
+                scrub: true,
+                toggleActions: 'restart pause reverse complete',
             }
         },)
     }, [])
@@ -80,14 +165,14 @@ const Landing = () => {
             <div className="show-phone">
                 <img className='mask' ref={scrollPhone} src={"https://upload.wikimedia.org/wikipedia/commons/3/32/IPhone_X_vector.svg"} alt="" />
             </div>
-            <div className="pictures">
-                <div className="photo" id='five'><img ref={movePhotoFive} src={photoFive} alt="" /></div>
-                <div className="photo" id="six"><img src={photoSix} alt="" /></div>
-                <div className="photo" id='one'><img src={photoOne} alt="" /></div>
-                <div className="photo" id='four'><img src={photoFour} alt="" /></div>
-                <div className="photo" id='three'><img src={photoThree} alt="" /></div>
-                <div className="photo" id='two'><img src={photoTwo} alt="" /></div>
-            </div>
+
+                <div ref={movePhotoFive} className="photo" id='five'><img src={photoFive} alt="" /></div>
+                <div ref={movePhotoSix} className="photo" id="six"><img  src={photoSix} alt="" /></div>
+                <div ref={movePhotoOne} className="photo" id='one'><img src={photoOne} alt="" /></div>
+                <div ref={movePhotoFour} className="photo" id='four'><img src={photoFour} alt="" /></div>
+                <div ref={movePhotoThree} className="photo" id='three'><img src={photoThree} alt="" /></div>
+                <div ref={movePhotoTwo} className="photo" id='two'><img src={photoTwo} alt="" /></div>
+
         </div>
     );
 };

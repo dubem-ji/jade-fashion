@@ -209,7 +209,6 @@ h5 {
   display: flex;
   align-items: center;
   margin-left: 4.3%;
-  /* border: 1px red solid; */
   height: 100%;
   position: relative;
 }
@@ -238,45 +237,52 @@ h5 {
   left: 8%;
   font-weight: 300;
 }
-.landing .pictures #one img{
-  height: auto;
-  width: 350px;
+.landing .photo{
+  overflow: hidden;
+}
+.landing .photo img{
+  width: 100%;
+  overflow: hidden;
+}
+.landing #one {
+  height: 350px;
+  width: 380px;
   position: fixed;
-  bottom: 34%;
+  bottom: 40%;
   right: 0%;
 }
-.landing .pictures #two img {
-  height: auto;
+.landing #two {
+  height: 350px;
   width: 350px;
   position: fixed;
   bottom: -10%;
   right: 10%;
 }
-.landing .pictures #three img {
-  height: auto;
-    width: 350px;
-    position: fixed;
-    bottom: 12%;
-    right: 0;
-}
-.landing .pictures #four img {
-  height: auto;
+.landing #three {
+  height: 350px;
     width: 380px;
     position: fixed;
-    bottom: 20%;
-    right: 18%;
+    bottom: 12%;
+    right: 0%;
 }
-.landing .pictures #five img {
-  height: auto;
+.landing #four {
+  height: 350px;
   width: 380px;
+  position: fixed;
+  bottom: 20%;
+  right: 30%;
+}
+.landing #five {
+  height: 300px;
+  width: 300px;
   position: fixed;
   bottom: 0%;
   right: 0%;
 }
-.landing .pictures #six img {
-  height: 400px;
-  width: auto;
+.landing #six {
+  height: 350px;
+  width: 380px;
   position: fixed;
-  bottom: -30%;
-  right: 23%;
+  bottom: -20%;
+  right: 50%;
 }
