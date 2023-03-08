@@ -51,7 +51,7 @@ const Home = () => {
                 start: 'top 20%',
                 end: 'top 10%',
                 scrub: 2,
-                markers: true,
+                // markers: true,
             }
         })
         tl.to('.footer', {height:'50vh', duration: 10})
