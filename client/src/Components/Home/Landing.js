@@ -187,9 +187,6 @@ const Landing = () => {
             }
         })
         tl.to('.photo', {x: -2000, duration: 5})
-
-
-
     }, [])
 
 
