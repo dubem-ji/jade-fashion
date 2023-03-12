@@ -432,7 +432,7 @@ const Landing = () => {
             <div className='landing'>
                 {/* #Text */}
                 <div ref={triggerScroll} className="scroll-text">
-                    <h1 ref={scrollText}>Fashion gone rogue with jad<span>é</span> - Winter collection</h1>
+                    <h1 ref={scrollText}>Fashion gone rogue with jad<span>é</span> - 2023 collection</h1>
                 </div>
                 <h3 ref={scrollDescrip} className='descrip-text'>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.

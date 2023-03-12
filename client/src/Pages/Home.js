@@ -25,7 +25,7 @@ const Home = () => {
             
         gsap.to(footer, {
             bottom: '0%',
-            height: '40vh',
+            height: '35vh',
             scrollTrigger: {
                 trigger: greyTrigger,
                 start: 'top 100%',
@@ -380,14 +380,6 @@ const Home = () => {
 
             <div className="overtone"></div>
             <Landing />
-            {/* #Video */}
-            <div ref={triggerGrey} className="video">
-                <div className="v-space">
-                    <video loop autoPlay muted>
-                        <source src={landingVideo} type="video/mp4"></source>
-                    </video>
-                </div>
-            </div>
 
             <div ref={hideText} className="menu">
                 <div className="item"><div className="shop"><Link to='/shop'>SHOP</Link></div></div>
@@ -398,6 +390,14 @@ const Home = () => {
 
             <div  className="brand">
                 <Link to='/'><h1 ref={hideText}>jad<span>é</span></h1></Link>
+            </div>
+            {/* #Video */}
+            <div ref={triggerGrey} className="video">
+                <div className="v-space">
+                    <video loop autoPlay muted>
+                        <source src={landingVideo} type="video/mp4"></source>
+                    </video>
+                </div>
             </div>
 
             <div className="slider">
