@@ -14,48 +14,18 @@ gsap.registerPlugin(ScrollTrigger)
 
 const Home = () => {
 
-    const toggleBackground = useRef(null);
     const toggleFooter = useRef(null);
-    const triggerBrown = useRef(null);
     const triggerGrey = useRef(null);
     const hideText = useRef(null);
 
     useEffect(() => {
-        const backgroundColor = toggleBackground.current;
         const footer = toggleFooter.current;
-        const brownTrigger = triggerBrown.current;
         const greyTrigger = triggerGrey.current;
         const textHide = hideText.current;
             
-        gsap.to(backgroundColor, {
-            background: '#513233',
-            color: '#FFFFFF',
-            scrollTrigger: {
-                trigger: brownTrigger,
-                start: 'top 90%',
-                end: 'top 0%',
-                scrub: true,
-                toggleActions: 'restart pause reverse complete',
-                // markers: true,
-            }
-        },)
-
-        gsap.to(backgroundColor, {
-            background: '#202322',
-            color: '#FFFFFF',
-            scrollTrigger: {
-                trigger: greyTrigger,
-                start: 'top 40%',
-                end: 'top 0%',
-                scrub: true,
-                toggleActions: 'restart pause reverse complete',
-                // markers: true,
-            }
-        },)
-
         gsap.to(footer, {
             bottom: '0%',
-            height: '30vh',
+            height: '40vh',
             scrollTrigger: {
                 trigger: greyTrigger,
                 start: 'top 100%',
@@ -67,14 +37,14 @@ const Home = () => {
         },)
 
         gsap.to(textHide, {
-            display: 'none',
+            opacity: '0',
             scrollTrigger: {
                 trigger: greyTrigger,
-                start: 'top 50%',
+                start: 'top 100%',
                 end: 'top 30%',
                 scrub: 1,
                 toggleActions: 'restart pause reverse complete',
-                markers: true,
+                // markers: true,
             }
         },)
 
@@ -407,7 +377,10 @@ const Home = () => {
                 <div className="six"></div>
             </div>
 
-              {/* #Video */}
+
+            <div className="overtone"></div>
+            <Landing />
+            {/* #Video */}
             <div ref={triggerGrey} className="video">
                 <div className="v-space">
                     <video loop autoPlay muted>
@@ -415,24 +388,6 @@ const Home = () => {
                     </video>
                 </div>
             </div>
-
-            <div ref={toggleBackground} className="overtone"></div>
-            
-            
-            
-            
-            <Landing />
-            {/* <div className="landmark" id="l1"></div>
-            <div className="landmark" id="l2"></div>
-            <div className="landmark" id="l3"></div>
-            <div className="landmark" id="l4"></div>
-            <div className="landmark" id="l5"></div>
-            <div className="landmark" id="l6"></div>
-            <div className="landmark" id="l7"></div>
-            <div className="landmark" id="l8"></div>
-            <div className="landmark" id="l9"></div>
-            <div className="landmark" id="l10"></div> */}
-    
 
             <div ref={hideText} className="menu">
                 <div className="item"><div className="shop"><Link to='/shop'>SHOP</Link></div></div>
@@ -445,7 +400,7 @@ const Home = () => {
                 <Link to='/'><h1 ref={hideText}>jad<span>é</span></h1></Link>
             </div>
 
-            <div ref={triggerBrown} className="slider">
+            <div className="slider">
                 <h5 ref={hideText}>slider</h5>
             </div>
 
@@ -465,10 +420,12 @@ const Home = () => {
                             <h3>CONTACT</h3>
                         </div>
                         <div className="news">
-                            <h3>SUBSCRIBE TO NEWSLETTER</h3>
-                            <div className="input">
-                                <input type="text" placeholder='Your e-mail'></input>
-                                <EastIcon sx={{fontWeight: 300, fontSize: '0.8rem'}} className='icon' />
+                            <div className="content">
+                                <h3>SUBSCRIBE TO NEWSLETTER</h3>
+                                <div className="input">
+                                    <input type="text" placeholder='Your e-mail'></input>
+                                    <EastIcon sx={{fontWeight: 300, fontSize: '0.8rem'}} className='icon' />
+                                </div>
                             </div>
                         </div>
                     </div>
