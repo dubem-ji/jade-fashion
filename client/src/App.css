@@ -1,7 +1,6 @@
 /* #Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
-
 /* #Root Variables */
 :root {
   /* grey tones */
@@ -259,9 +258,8 @@ h5 {
   top: 20%;
   right: -2%;
   opacity: 1;
-    /* -ms-transform: rotateX(90deg); */
-      transform: rotate(-90deg);
-      transform-style: preserve-3d;
+  transform: rotate(-90deg);
+  transform-style: preserve-3d;
 }
 .home .menu .item{
   display: inline-block;
