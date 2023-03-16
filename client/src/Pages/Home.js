@@ -401,7 +401,7 @@ const Home = () => {
             </div>
 
             <div className="slider">
-                <h5 ref={hideText}>slider</h5>
+                {/* <h5 ref={hideText}>slider</h5> */}
             </div>
 
             <div ref={toggleFooter} className="footer">

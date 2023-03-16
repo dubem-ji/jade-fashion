@@ -470,7 +470,7 @@ const Landing = () => {
             <div className='jacket'>
                 <div className="content">
                     <div ref={showJtitle} className="title">
-                        <h1>jackets</h1>
+                        <h1>Rogué</h1>
                     </div>
                     <div className="j-images">
                         {/* jacket */}
