@@ -382,9 +382,9 @@ const Home = () => {
             <Landing />
 
             <div ref={hideText} className="menu">
+                <div className="item"><div className="contact">CONTACT</div></div>
                 <div className="item"><div className="shop"><Link to='/shop'>SHOP</Link></div></div>
                 
-                <div className="item"><div className="contact">CONTACT</div></div>
             </div>
      
 
@@ -401,7 +401,7 @@ const Home = () => {
             </div>
 
             <div className="slider">
-                {/* <h5 ref={hideText}>slider</h5> */}
+                
             </div>
 
             <div ref={toggleFooter} className="footer">

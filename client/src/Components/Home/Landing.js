@@ -27,15 +27,11 @@ const Landing = () => {
     const movePhotoFive = useRef(null);
     const movePhotoSix = useRef(null);
     const showScrolls = useRef(null);
-    // #Jackets
+    // #Photos
     const showJone = useRef(null);
     const showJtwo = useRef(null);
     const showJthree = useRef(null);
     const showJfour = useRef(null);
-    const showJTone = useRef(null);
-    const showJTtwo = useRef(null);
-    const showJtitle = useRef(null);
-    // #Jean
     const showJfive = useRef(null);
     const showJsix = useRef(null);
     const showJseven = useRef(null);
@@ -45,7 +41,18 @@ const Landing = () => {
     const showJeleven = useRef(null);
     const showJtwelve = useRef(null);
     
-    
+    // #Texts
+    const showJtitleOne = useRef(null);
+    const showJtitleTwo = useRef(null);
+    const showJtitleThree = useRef(null);
+    const showJtitleFour = useRef(null);
+    const showJtitleFive = useRef(null);
+    const showJTone = useRef(null);
+    const showJTtwo = useRef(null);
+    const showJTthree = useRef(null);
+    const showJTFour = useRef(null);
+    const showJTFive = useRef(null);
+
 
     useEffect(() => {
         // #Main variable
@@ -59,7 +66,7 @@ const Landing = () => {
         const photoFive = movePhotoFive.current;
         const photoSix = movePhotoSix.current;
         const triggerEl = triggerScroll.current;
-        const scrolls = showScrolls.current;     
+        const scrolls = showScrolls.current;
         // #Main page animation
         gsap.to(triggerEl, {
             x: -2500,
@@ -68,7 +75,7 @@ const Landing = () => {
             scrollTrigger: {
                 trigger: el,
                 start: "top 20%",
-                end: () => `+=${el.offsetWidth/1.5 }`,
+                end: () => `+=${el.offsetWidth / 1.5}`,
                 scrub: true,
                 toggleActions: 'restart pause reverse complete',
                 // markers: true,
@@ -76,12 +83,12 @@ const Landing = () => {
             }
         },)
 
-         gsap.to(descrip, {
+        gsap.to(descrip, {
             opacity: 0,
             scrollTrigger: {
                 trigger: el,
                 start: "top 20%",
-                end: () => `+=${el.offsetWidth/10 }`,
+                end: () => `+=${el.offsetWidth / 10}`,
                 scrub: true,
                 toggleActions: 'restart pause reverse complete',
             }
@@ -206,17 +213,23 @@ const Landing = () => {
                 // markers: true,
             }
         })
-        tl.to('.photo', { x: -2000, duration: 5 })    
+        tl.to('.photo', { x: -2000, duration: 5 })
         
 
-        // #Jackets variable
+        // #Photo variable
         const jOne = showJone.current;
         const jTwo = showJtwo.current;
         const jThree = showJthree.current;
         const jFour = showJfour.current;
-        const jtOne = showJTone.current;
-        const jtTwo = showJTtwo.current;
-        const jTitle = showJtitle.current;
+        const jFive = showJfive.current;
+        const jSix = showJsix.current;
+        const jSeven = showJseven.current;
+        const jEight = showJeight.current;
+        const jNine = showJnine.current;
+        const jTen = showJten.current;
+        const jEleven = showJeleven.current;
+        const jTwelve = showJtwelve.current;
+
         // #Jacket page animation
         gsap.to(jOne, {
             top: "0%",
@@ -230,31 +243,9 @@ const Landing = () => {
                 // markers: true,
             }
         },);
-        gsap.to(jTitle, {
-            opacity: '0.8',
-            scrollTrigger: {
-                trigger: el,
-                start: () => `+=${el.offsetWidth / 100 + 1000}`,
-                end: () => `+=${el.offsetWidth / 100 + 4000}`,
-                scrub: true,
-                toggleActions: 'restart pause reverse complete',
-                // markers: true,
-            }
-        },);
-        gsap.to(jtOne, {
-            top: "10%",
-            height: '100%',
-            scrollTrigger: {
-                trigger: el,
-                start: () => `+=${el.offsetWidth / 10}`,
-                end: () => `+=${el.offsetWidth / 100 + 1000}`,
-                scrub: true,
-                toggleActions: 'restart pause reverse complete',
-                // markers: true,
-            }
-        },);
-
-          gsap.to(jTwo, {
+        
+       
+        gsap.to(jTwo, {
             top: "0%",
             height: '100%',
             scrollTrigger: {
@@ -265,7 +256,7 @@ const Landing = () => {
                 toggleActions: 'restart pause reverse complete',
                 // markers: true,
             }
-          },)
+        },)
         gsap.to(jThree, {
             top: "0%",
             height: '100%',
@@ -278,31 +269,7 @@ const Landing = () => {
                 // markers: true,
             }
         },);
-        gsap.to(jtOne, {
-            top: "10%",
-            height: '100%',
-            opacity: '0',
-            scrollTrigger: {
-                trigger: el,
-                start: () => `+=${el.offsetWidth / 100 + 3500}`,
-                end: () => `+=${el.offsetWidth / 100 + 4000}`,
-                scrub: true,
-                toggleActions: 'restart pause reverse complete',
-                // markers: true,
-            }
-        },);
-        gsap.to(jtTwo, {
-            top: "10%",
-            height: '100%',
-            scrollTrigger: {
-                trigger: el,
-                start: () => `+=${el.offsetWidth / 100 + 3500}`,
-                end: () => `+=${el.offsetWidth / 100 + 4000}`,
-                scrub: true,
-                toggleActions: 'restart pause reverse complete',
-                // markers: true,
-            }
-        },);
+        
 
         gsap.to(jFour, {
             top: "0%",
@@ -317,15 +284,7 @@ const Landing = () => {
             }
         },);
 
-        const jFive = showJfive.current;
-        const jSix = showJsix.current;
-        const jSeven = showJseven.current;
-        const jEight = showJeight.current;
-        const jNine = showJnine.current;
-        const jTen = showJten.current;
-        const jEleven = showJeleven.current;
-        const jTwelve = showJtwelve.current;
-
+        
         gsap.to(jFive, {
             top: "0%",
             height: '100%',
@@ -412,7 +371,7 @@ const Landing = () => {
                 // markers: true,
             }
         },);
-          gsap.to(jTwelve, {
+        gsap.to(jTwelve, {
             top: "0%",
             height: '100%',
             scrollTrigger: {
@@ -424,6 +383,30 @@ const Landing = () => {
                 // markers: true,
             }
         },);
+        
+        
+        // #Text animations
+        const jTitleOne = showJtitleOne.current;
+        // const jTitleTwo = showJtitleTwo.current;
+        // const jTitleThree = showJtitleThree.current;
+        // const jTitleFour = showJtitleFour.current;
+        // const jTitleFive = showJtitleFive.current;
+
+        gsap.to(jTitleOne, {
+            // opacity: '0.8',
+            display: 'none',
+            scrollTrigger: {
+                trigger: el,
+                start: () => `800`,
+                end: () => `2800`,
+                scrub: true,
+                toggleActions: 'restart pause reverse complete',
+                markers: true,
+                toggleClass: 'hide',
+            }
+        },);
+               
+
     }, [])
 
 
@@ -435,28 +418,8 @@ const Landing = () => {
                     <h1 ref={scrollText}>Fashion gone rogue with jad<span>é</span> - 2023 collection</h1>
                 </div>
                 <h3 ref={scrollDescrip} className='descrip-text'>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    All Happening this winter with jad<span>é</span>!
                 </h3>
-
-                {/* #Phone */}
-                {/* <div className="show-phone">
-                    <img className='mask' ref={scrollPhone} src={"https://upload.wikimedia.org/wikipedia/commons/3/32/IPhone_X_vector.svg"} alt="" />
-                </div>
-                <div ref={showScrolls} className="scrolls">
-                    <div className="empty">
-
-                    </div>
-                    <div className="phone-background">
-                        <div className="b-color">
-
-                        </div>
-                    </div>
-                    <div className="empty">
-
-                    </div>
-                </div> */}
-
-                {/* #Photos */}
                 <div ref={movePhotoFive} className="photo" id='five'><img src={photoFive} alt="" /></div>
                 <div ref={movePhotoSix} className="photo" id="six"><img src={photoSix} alt="" /></div>
                 <div ref={movePhotoOne} className="photo" id='one'><img src={photoOne} alt="" /></div>
@@ -469,8 +432,22 @@ const Landing = () => {
 
             <div className='jacket'>
                 <div className="content">
-                    <div ref={showJtitle} className="title">
-                        <h1>Rogué</h1>
+                    <div>
+                        <div className="title" ref={showJtitleOne}>
+                            <h1>Boldn<span>é</span>ss</h1>
+                        </div>
+                        <div className="title" ref={showJtitleTwo}>
+                            <h1>Tr<span>é</span>nds</h1>
+                        </div>
+                        <div className="title" ref={showJtitleThree}>
+                            <h1>Attitud<span>é</span></h1>
+                        </div>
+                        <div className="title" ref={showJtitleFour}>
+                            <h1>Styl<span>é</span></h1> 
+                        </div>
+                        <div className="title" ref={showJtitleFive}>
+                             <h1>R<span>é</span>volution</h1>
+                        </div>
                     </div>
                     <div className="j-images">
                         {/* jacket */}
@@ -491,16 +468,37 @@ const Landing = () => {
                         {/* glasses */}
                         <div ref={showJtwelve} className="j-photo" id='j-twelve'></div>
                     </div>
-                    <div className="texts">
-                        <div className="text" id='jt-one' ref={showJTone}>
-                            <h3>Lorem ipsum dolor sit amet.</h3>
-                            <br />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, doloribus beatae odio culpa nam in ab nostrum! Perferendis, quos eaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officia earum nobis a id itaque cupiditate! Temporibus id pariatur ex?</p>
+                    <div className="right-scroll">
+                        <div className="empty">
+
                         </div>
-                        <div className="text" id='jt-two' ref={showJTtwo}>
-                            <h3>Lorem ipsum dolor sit amet.</h3>
-                            <br />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, doloribus beatae odio culpa nam in ab nostrum! Perferendis, quos eaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam fugit molestias alias blanditiis impedit.</p>
+                        <div className="texts">
+                            <div className="jt-one" id='jt-one' ref={showJTone}>
+                                <p>"Don't be into trends. Don't make fashion own you, but you decide what you are, what you want to express by the way you dress and the way to live."</p>
+                                <br />
+                                <h3> —Gianni Versace</h3>
+                            </div>
+                            <div className="jt-two" id='jt-two' ref={showJTtwo}>
+                                <p>"You gotta have style. It helps you get down the stairs. It helps you get up in the morning. It’s a way of life. Without it, you’re nobody. I’m not talking about lots of clothes.”</p>
+                                <br />
+                                <h3> —Diana Vreeland</h3>                          
+                            </div>
+                            <div className="jt-three" id='jt-three' ref={showJTthree}>
+                                <p>"I think we all know boldness when we see it. Nothing makes me smile more than when I see someone being fully themselves, with their own individual style and character, whatever that is."</p>
+                                <br />
+                                <h3> —Angelina Jolie</h3>                          
+                            </div>
+                            <div className="jt-four" id='jt-four' ref={showJTFour}>
+                                <p>"The shoes set up the tone and attitude, they change the perception of the way one wears clothes, what we call in France le porté. It is not about length, but the juxtaposition or décalage of the shoes—high or low—with the rest of the proportions."</p>
+                                <br />
+                                <h3> —Hedi Slimane</h3>                          
+                            </div>
+                            
+                            <div className="jt-five" id='jt-five' ref={showJTFive}>
+                                <p>"Fashion is part of the daily air and it changes all the time, with all the events. You can even see the approaching of a revolution in clothes. You can see and feel everything in clothes." </p>
+                                <br />
+                                <h3> —Diana Vreeland</h3>                          
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -19,11 +19,6 @@
   --color-brown-4: #3B3331;
   --color-brown-5: #29100B;
 
-  /* pink tones */
-  --color-pink-1: #DCC8C1;
-  --color-pink-2: #D3C1AD;
-  --color-pink-3: #D9AEA8;
-
   --borer-radius-1: 0.4rem;
   --borer-radius-2: 0.8rem;
   --borer-radius-3: 1.2rem;
@@ -264,14 +259,13 @@ h5 {
 .home .menu .item{
   display: inline-block;
   font-size: 0.7rem;
-  font-weight: 400;
-  color: var(--color-grey-2);
+  font-weight: 600;
+  color: var(--color-brown-2);
   cursor: pointer;
   transition-duration: 1s;
 }
 .home .menu .item:hover{
   color: var(--color-white);
-  border-bottom: 1px var(--color-white) solid;
 }
 .home .menu:hover{
   opacity: 1;
@@ -287,7 +281,7 @@ h5 {
   position: fixed;
 }
 .home .brand span {
-  color: var(--color-grey-2);
+  color: var(--color-brown-2);
   font-weight: 600;
 }
 .home .slider{
@@ -419,7 +413,7 @@ input:focus {
 .landing .scroll-text{
   display: flex;
   align-items: center;
-  margin-left: 5%;
+  margin-left: 4.5%;
   height: 100%;
   width: 100%;
   position: relative;
@@ -431,32 +425,13 @@ input:focus {
   font-size: 6rem;
   font-weight: 500;
 }
-.landing .show-phone img{
-  position: fixed;
-  top: 100%;
-  height: 80%;
+.landing .scroll-text span{
+  color: var(--color-brown-2);
 }
-.landing .scrolls{
-  position: fixed;
-  opacity: 0;
-  top: 100%;
-  height: 100vh;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 39.8% 20.4% 39.8%;
+.landing .descrip-text span{
+  color: var(--color-brown-2);
 }
-.landing .scrolls .phone-background{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-.landing .scrolls .phone-background .b-color{
-  height: 94%;
-  width: 100%;
-  background: var(--color-white);
-  border-radius: 2.4rem;
-}
+
 .landing .descrip-text{
   width: 20%;
   position: fixed;
@@ -518,7 +493,6 @@ input:focus {
 .jacket {
   height: 100vh;
   width: 100vw;
-  /* border: 1px solid red; */
 }
 .jacket .content{
   height: 100%;
@@ -531,12 +505,16 @@ input:focus {
   height: 100%;
   display: flex;
   align-items: center;
-  opacity: 0;
+  /* opacity: 0; */
 }
 .jacket .content .title h1{
   font-size: 3rem;
   font-weight: 500;
 }
+.jacket .content .title span{
+  color: var(--color-brown-2);
+}
+
 .jacket .j-images{
   position: absolute;
   left: 38%;
@@ -652,129 +630,28 @@ input:focus {
   background-position: center;
   background-size: cover;
 }
+.jacket .right-scroll{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10%;
+  height: 1800vh;
+  padding-top: 400vh;
+}
 .jacket .content .texts h3{
   font-weight: 500;
   font-size: 0.8rem;
-  /* text-align: left; */
+  color: var(--color-brown-2);
 }
 .jacket .content .texts p{
   font-weight: 400;
   font-size: 0.7rem;
   text-align: left;
 }
-.jacket .content .texts #jt-one{
+.jacket .content .texts{
   width: 15%;
-  position: fixed;
-  top: 100%;
-  right: 10%;
-  opacity: 1;
-}
-.jacket .content .texts #jt-two{
-  width: 15%;
-  position: fixed;
-  top: 100%;
-  right: 10%;
-}
-
-
-/* #------------------------------Shop---------------------------------------- */
-.shop-section{
-  background: var(--color-grey-3);
-  /* height: 200vh; */
-}
-.shop-section .top{
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-.shop-section .nav{
-  height: 4rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  background: var(--color-grey-1);
-  padding: 0rem 3rem;
-}
-.shop-section .nav h3{
-  font-weight: 400;
-  color: var(--color-brown-5);
-}
-.shop-section .nav .icon{
-  cursor: pointer;
-  font-weight: 500;
-  color: var(--color-brown-5);
-}
-.shop-section .nav .menu{
-  display: flex;
-  align-items: center;
-  gap: 0rem;
-}
-.shop-section .nav .brand h1{
-  font-weight: 600;
-  font-size: 1.5rem;
-}
-.shop-section .nav .brand span{
-  color: var(--color-brown-3);
-}
-.shop-section .nav .cart{
-  display: flex;
-  align-items: center;
-  gap: 0rem;
-}
-.shop-section .product-title{
-  height: 4rem;
-  background: var(--color-dark-2);
-  border-bottom-left-radius: var(--borer-radius-2);
-  border-bottom-right-radius: var(--borer-radius-2);
-  display: flex;
-  align-items: center;
-}
-.shop-section .product-title h1{
-  padding: 0rem 3rem;
-  font-weight: 400;
-  color: var(--color-white);
-  font-size: 2rem;
-}
-.shop-section .product-items{
-  margin-top: 5rem;
-  width: 100%;
-}
-.shop-section .product-items .stack-small{
-  width: 100%;
-  height: 80vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-.shop-section .product-items .stack-big {
-  width: 100%;
-  height: 110vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-.shop-section .product-items .item{
-  width: 50%;
-  border: 1px var(--color-dark-1) solid;
-  overflow: hidden;
-}
-.shop-section .product-items #three{
-  background: url("https://twicpics.celine.com/product-prd/images/large/2V57M410T.01VA_1_SPR23.jpg?twic=v1/cover=1:1/resize-max=480");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition-duration: 2s;
-}
-.shop-section .product-items #three:hover{
-  background-size: 120%;
-}
-.shop-section .product-items #four{
-  background: url("https://www.iwmbuzz.com/wp-content/uploads/2022/01/style-file-5-times-blackpinks-lisa-styled-the-chasseur-jacket-5.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.shop-section .product-items #seven {
-  background: url("https://www.iwmbuzz.com/wp-content/uploads/2022/01/style-file-5-times-blackpinks-lisa-styled-the-chasseur-jacket-2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 100%;
+  align-items: end;
 }
