@@ -448,8 +448,8 @@ const Home = () => {
                         <h3>2023 JADÉ. ALL RIGHTS RESERVED</h3>
                     </div>
                     <div className="dev-contact">
-                        <h3>DESIGNED BY <a href="https://github.com/Dubem-Joy" target="_blank" rel="noopener noreferrer">DUBEM</a> </h3>
-                        <h3>DEVELOPED BY <a href="https://github.com/Dubem-Joy" target="_blank" rel="noopener noreferrer">DUBEM</a> </h3>
+                        <h3>DESIGNED BY <a href="https://github.com/dubem-ji" target="_blank" rel="noopener noreferrer">DUBEM</a> </h3>
+                        <h3>DEVELOPED BY <a href="https://github.com/dubem-ji" target="_blank" rel="noopener noreferrer">DUBEM</a> </h3>
                     </div>
                 </div>
             </div>
