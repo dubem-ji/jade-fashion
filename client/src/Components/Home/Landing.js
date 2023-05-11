@@ -42,11 +42,6 @@ const Landing = () => {
     const showJtwelve = useRef(null);
     
     // #Texts
-    const showJtitleOne = useRef(null);
-    const showJtitleTwo = useRef(null);
-    const showJtitleThree = useRef(null);
-    const showJtitleFour = useRef(null);
-    const showJtitleFive = useRef(null);
     const showJTone = useRef(null);
     const showJTtwo = useRef(null);
     const showJTthree = useRef(null);
@@ -294,7 +289,6 @@ const Landing = () => {
                 end: () => `5800`,
                 scrub: true,
                 toggleActions: 'restart pause reverse complete',
-                // markers: true,
             }
         },);
 
@@ -307,7 +301,6 @@ const Landing = () => {
                 end: () => `6800`,
                 scrub: true,
                 toggleActions: 'restart pause reverse complete',
-                // markers: true,
             }
         },);
 
@@ -320,7 +313,6 @@ const Landing = () => {
                 end: () => `7800`,
                 scrub: true,
                 toggleActions: 'restart pause reverse complete',
-                // markers: true,
             }
         },);
         gsap.to(jEight, {
@@ -332,7 +324,6 @@ const Landing = () => {
                 end: () => `8800`,
                 scrub: true,
                 toggleActions: 'restart pause reverse complete',
-                // markers: true,
             }
         },);
         gsap.to(jNine, {
@@ -344,7 +335,6 @@ const Landing = () => {
                 end: () => `9800`,
                 scrub: true,
                 toggleActions: 'restart pause reverse complete',
-                // markers: true,
             }
         },);
         gsap.to(jTen, {
@@ -356,7 +346,6 @@ const Landing = () => {
                 end: () => `10800`,
                 scrub: true,
                 toggleActions: 'restart pause reverse complete',
-                // markers: true,
             }
         },);
         gsap.to(jEleven, {
@@ -368,7 +357,6 @@ const Landing = () => {
                 end: () => `11800`,
                 scrub: true,
                 toggleActions: 'restart pause reverse complete',
-                // markers: true,
             }
         },);
         gsap.to(jTwelve, {
@@ -380,32 +368,10 @@ const Landing = () => {
                 end: () => `12800`,
                 scrub: true,
                 toggleActions: 'restart pause reverse complete',
-                // markers: true,
             }
         },);
         
-        
-        // #Text animations
-        const jTitleOne = showJtitleOne.current;
-        // const jTitleTwo = showJtitleTwo.current;
-        // const jTitleThree = showJtitleThree.current;
-        // const jTitleFour = showJtitleFour.current;
-        // const jTitleFive = showJtitleFive.current;
-
-        gsap.to(jTitleOne, {
-            // opacity: '0.8',
-            display: 'none',
-            scrollTrigger: {
-                trigger: el,
-                start: () => `800`,
-                end: () => `2800`,
-                scrub: true,
-                toggleActions: 'restart pause reverse complete',
-                markers: true,
-                toggleClass: 'hide',
-            }
-        },);
-               
+                 
 
     }, [])
 
@@ -418,7 +384,7 @@ const Landing = () => {
                     <h1 ref={scrollText}>Fashion gone rogue with jad<span>é</span> - 2023 collection</h1>
                 </div>
                 <h3 ref={scrollDescrip} className='descrip-text'>
-                    All Happening this winter with jad<span>é</span>!
+                    All Happening this fall with jad<span>é</span>!
                 </h3>
                 <div ref={movePhotoFive} className="photo" id='five'><img src={photoFive} alt="" /></div>
                 <div ref={movePhotoSix} className="photo" id="six"><img src={photoSix} alt="" /></div>
@@ -433,20 +399,8 @@ const Landing = () => {
             <div className='jacket'>
                 <div className="content">
                     <div>
-                        <div className="title" ref={showJtitleOne}>
-                            <h1>Boldn<span>é</span>ss</h1>
-                        </div>
-                        <div className="title" ref={showJtitleTwo}>
-                            <h1>Tr<span>é</span>nds</h1>
-                        </div>
-                        <div className="title" ref={showJtitleThree}>
-                            <h1>Attitud<span>é</span></h1>
-                        </div>
-                        <div className="title" ref={showJtitleFour}>
-                            <h1>Styl<span>é</span></h1> 
-                        </div>
-                        <div className="title" ref={showJtitleFive}>
-                             <h1>R<span>é</span>volution</h1>
+                        <div className="title">
+                            {/* <h1>Tr<span>é</span>nd</h1> */}
                         </div>
                     </div>
                     <div className="j-images">
