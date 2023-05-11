@@ -427,9 +427,11 @@ input:focus {
 }
 .landing .scroll-text span{
   color: var(--color-brown-2);
+  font-weight: 600;
 }
 .landing .descrip-text span{
   color: var(--color-brown-2);
+  font-weight: 700;
 }
 
 .landing .descrip-text{
@@ -448,9 +450,9 @@ input:focus {
 }
 .landing #one {
   height: 350px;
-  width: 380px;
+  width: 400px;
   position: fixed;
-  bottom: 40%;
+  bottom: 45%;
   right: 0%;
 }
 .landing #two {
@@ -462,9 +464,9 @@ input:focus {
 }
 .landing #three {
   height: 380px;
-    width: 380px;
+    width: 400px;
     position: fixed;
-    bottom: 12%;
+    bottom: 18%;
     right: 0%;
 }
 .landing #four {
