@@ -225,7 +225,7 @@ const Landing = () => {
         const jEleven = showJeleven.current;
         const jTwelve = showJtwelve.current;
 
-        // #Jacket page animation
+        // #Image transition
         gsap.to(jOne, {
             top: "0%",
             height: '100%',
@@ -427,28 +427,28 @@ const Landing = () => {
 
                         </div>
                         <div className="texts">
-                            <div className="jt-one" id='jt-one' ref={showJTone}>
+                            <div className="text jt-one" id='jt-one' ref={showJTone}>
                                 <p>"Don't be into trends. Don't make fashion own you, but you decide what you are, what you want to express by the way you dress and the way to live."</p>
                                 <br />
                                 <h3> —Gianni Versace</h3>
                             </div>
-                            <div className="jt-two" id='jt-two' ref={showJTtwo}>
+                            <div className="text jt-two" id='jt-two' ref={showJTtwo}>
                                 <p>"You gotta have style. It helps you get down the stairs. It helps you get up in the morning. It’s a way of life. Without it, you’re nobody. I’m not talking about lots of clothes.”</p>
                                 <br />
                                 <h3> —Diana Vreeland</h3>                          
                             </div>
-                            <div className="jt-three" id='jt-three' ref={showJTthree}>
+                            <div className="text jt-three" id='jt-three' ref={showJTthree}>
                                 <p>"I think we all know boldness when we see it. Nothing makes me smile more than when I see someone being fully themselves, with their own individual style and character, whatever that is."</p>
                                 <br />
                                 <h3> —Angelina Jolie</h3>                          
                             </div>
-                            <div className="jt-four" id='jt-four' ref={showJTFour}>
+                            <div className="text jt-four" id='jt-four' ref={showJTFour}>
                                 <p>"The shoes set up the tone and attitude, they change the perception of the way one wears clothes, what we call in France le porté. It is not about length, but the juxtaposition or décalage of the shoes—high or low—with the rest of the proportions."</p>
                                 <br />
                                 <h3> —Hedi Slimane</h3>                          
                             </div>
                             
-                            <div className="jt-five" id='jt-five' ref={showJTFive}>
+                            <div className="text jt-five" id='jt-five' ref={showJTFive}>
                                 <p>"Fashion is part of the daily air and it changes all the time, with all the events. You can even see the approaching of a revolution in clothes. You can see and feel everything in clothes." </p>
                                 <br />
                                 <h3> —Diana Vreeland</h3>                          

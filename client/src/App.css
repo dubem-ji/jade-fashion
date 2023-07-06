@@ -275,6 +275,14 @@ h5 {
   left: 8%;
   top: 13%;
 }
+@media only screen and (max-width: 500px) {
+  .home .brand {
+    top: 5%;
+  }
+  .home .menu{
+    top: 12%;
+  }
+}
 .home .brand h1 {
   font-weight: 500;
   font-size: 1.5rem;
@@ -311,6 +319,12 @@ h5 {
   height: auto;
   width: 100%;
   opacity: 0.4;
+}
+@media only screen and (max-width: 500px) {
+  .home .video .v-space video {
+      /* height: 100%; */
+      width: 100%;
+    }
 }
 
 .home .footer {
@@ -520,10 +534,8 @@ input:focus {
 .jacket .j-images{
   position: absolute;
   left: 38%;
-  height: 100%;
-  width: 30%;
-  /* border: 1px solid red; */
 }
+
 .jacket .j-images #j-one{
   height: 100%;
   width: 30%;
@@ -632,12 +644,67 @@ input:focus {
   background-position: center;
   background-size: cover;
 }
+@media only screen and (max-width: 1000px) {
+  .jacket .j-images {
+      left: 30%;
+    }
+  .jacket .j-images #j-one{
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .jacket .j-images {
+    left: 5%;
+    height: 50vh;
+  }
+
+  .jacket .j-images #j-one {
+    width: 90%;
+  }
+  .jacket .j-images #j-two {
+    width: 90%;
+  }
+  .jacket .j-images #j-three {
+    width: 90%;
+  }
+  .jacket .j-images #j-four {
+    width: 90%;
+  }
+  .jacket .j-images #j-five {
+    width: 90%;
+  }
+  .jacket .j-images #j-six {
+    width: 90%;
+  }
+  .jacket .j-images #j-seven {
+    width: 90%;
+  }
+  .jacket .j-images #j-eight {
+    width: 90%;
+  }
+  .jacket .j-images #j-nine {
+    width: 90%;
+  }
+  .jacket .j-images #j-ten {
+    width: 90%;
+  }
+  .jacket .j-images #j-eleven {
+    width: 90%;
+  }
+  .jacket .j-images #j-twelve {
+    width: 90%;
+  }
+}
 .jacket .right-scroll{
   display: flex;
   justify-content: space-between;
   margin: 0 10%;
   height: 1800vh;
   padding-top: 400vh;
+}
+.jacket .content .texts{
+  width: 30vw;
 }
 .jacket .content .texts h3{
   font-weight: 500;
@@ -650,9 +717,24 @@ input:focus {
   text-align: left;
 }
 .jacket .content .texts{
-  width: 15%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+}
+@media only screen and (max-width: 500px) {
+  .jacket .right-scroll {
+      position: absolute;
+      right: 0%;
+      margin: 0 0%;
+      height: 1800vh;
+      padding-top: 400vh;
+    }
+    .jacket .content .texts {
+      width: 50vw;
+    }
+    .jacket .content .text {
+      background: var(--color-dark-1);
+      padding: 1rem;
+    }
 }

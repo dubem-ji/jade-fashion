@@ -383,7 +383,7 @@ const Home = () => {
 
             <div ref={hideText} className="menu">
                 <div className="item"><div className="contact">CONTACT</div></div>
-                <div className="item"><div className="shop"><Link to='/shop'>SHOP</Link></div></div>
+                <div className="item"><div className="shop">SHOP</div></div>
                 
             </div>
      
